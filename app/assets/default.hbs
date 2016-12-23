@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{!-- Brand icon --}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{!-- Styles'n'Scripts --}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{ghost_head}}
+</head>
+<body>
+
+  {{!-- The blog navigation links --}}
+  {{navigation}}
+
+  <div class="container">
+    <div class="row">
+
+      {{{body}}}
+
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="footer-title">Giant Leaps</h3>
+          <p>Giant Leaps merupakan sebuah badan yang bergerak di bidang media informasi yang didirikan dan dikelola oleh <a href="#">Himpunan Mahasiswa Fisika Teknik ITB</a></p>
+          <p>Copyright &copy; Your Website 2014</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{asset "js/jquery.min.js"}}"></script>
+  <script src="{{asset "js/bootstrap.min.js"}}"></script>
+  <script src="{{asset "js/index.js"}}"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+.navbar-sub {
+  position: fixed;
+  top: 53px;
+  left: 0;
+  right: 0;
+  min-height: 43px;
+  z-index: 10;
+
+  border-radius: 0 !important;
+
+  transition: transform 0.2s ease-in-out;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+
+  &.is-hidden {
+    transform: translateY(-43px);
+    -webkit-transform: translateY(-43px);
+  }
+
+  &.is-visible {
+    transform: translateY(0);
+    -webkit-transform: translateY(-43px);
+  }
+
+  .navbar-nav {
+    top: 0;
+    float: left;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    max-height: 100%;
+  }
+
+  .navbar-nav > li {
+    float: left;
+  }
+
+  .navbar-nav > li > a {
+    padding: 10px 21px;
+  }
+}
+
+.navbar-toggle:before {
+  content: "\e9bd" !important;
+  font-family: 'icomoon' !important;
+}

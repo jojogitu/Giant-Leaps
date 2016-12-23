@@ -1,0 +1,18 @@
+.pagination {
+  display: block;
+  text-align: center;
+
+  .older-posts, .newer-posts {
+    display: block;
+    @extend .btn;
+    @extend .btn-primary;
+  }
+
+  .older-posts {
+    float: right;
+  }
+
+  .newer-posts {
+    float: left;
+  }
+}

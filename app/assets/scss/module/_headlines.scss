@@ -1,0 +1,63 @@
+.headlines {
+  margin-bottom: 50px;
+}
+
+.headline {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 2 / 3 * 100%;
+  width: 100%;
+
+  background-size: cover;
+  background-color: $clouds;
+
+  @media (max-width: $screen-sm-max) {
+    margin-bottom: 10px;
+  }
+
+  .headline-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .headline-title {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    max-width: 90%;
+    padding: 10px 0;
+
+    > h2 {
+      @media (max-width: $screen-sm-max) {
+        font-size: $font-size-h3;
+      }
+    }
+
+    > h2, > h3 {
+      color: $clouds;
+    }
+  }
+
+  .headline-overlay {
+    position: absolute;
+    top: 10%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 100%);
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 10%,rgba(0,0,0,1) 100%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 10%,rgba(0,0,0,1) 100%);
+
+    transition: top .2s ease-in-out;
+  }
+
+  &:hover .headline-overlay {
+    top: 0;
+  }
+}

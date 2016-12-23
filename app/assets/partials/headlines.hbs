@@ -1,0 +1,66 @@
+<section class="headlines">
+  <div class="col-md-8">
+    {{#get 'posts' filter='featured:true' limit='1'}}
+    {{#foreach posts}}
+    <div class="row">
+      <div class="headline" style="background-image: url({{image}})">
+        <a href="{{url}}">
+        <div class="headline-wrapper">
+            <div class="headline-title">
+              <h2 class="title has-sub">{{title}}</h2>
+              <div class="healine-meta">
+                <time class="post-date" datetime="{{date format="MMMM DD, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
+              </div>
+            </div>
+
+        </div>
+        <div class="headline-overlay"></div>
+        </a>
+      </div>
+
+    </div>
+    {{/foreach}}
+    {{/get}}
+  </div>
+  <div class="col-md-4">
+    {{#get 'posts' filter='featured:true' limit='1' page='2'}}
+    {{#foreach posts}}
+    <div class="row">
+      <a href="{{url}}">
+      <div class="headline" style="background-image: url({{image}})">
+        <div class="headline-wrapper">
+            <div class="headline-title">
+              <h3 class="title has-sub">{{title}}</h3>
+              <div class="healine-meta">
+                <time class="post-date" datetime="{{date format="MMMM DD, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
+              </div>
+            </div>
+        </div>
+        <div class="headline-overlay"></div>
+      </div>
+      </a>
+    </div>
+    {{/foreach}}
+    {{/get}}
+    {{#get 'posts' filter='featured:true' limit='1' page='3'}}
+    {{#foreach posts}}
+    <div class="row">
+      <a href="{{url}}">
+      <div class="headline" style="background-image: url({{image}})">
+        <div class="headline-wrapper">
+            <div class="headline-title">
+              <h3 class="title has-sub">{{title}}</h3>
+              <div class="healine-meta">
+                <time class="post-date" datetime="{{date format="MMMM DD, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
+              </div>
+            </div>
+        </div>
+        <div class="headline-overlay"></div>
+      </div>
+      </a>
+    </div>
+    {{/foreach}}
+    {{/get}}
+  </div>
+  <div class="clearfix"></div>
+</section>

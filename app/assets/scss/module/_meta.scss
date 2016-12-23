@@ -1,0 +1,15 @@
+.meta {
+
+  color: $silver;
+
+  .post-author > a {
+    color: $silver;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.post-excerpt {
+  margin-top: 15px;
+}

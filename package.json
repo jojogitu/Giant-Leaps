@@ -1,0 +1,28 @@
+{
+  "name": "giant-leaps",
+  "version": "1.0.0",
+  "description": "Website for Giant Leaps (An HMFT Media & Information Division)",
+  "main": "index.js",
+  "scripts": {
+    "install": "./node_modules/bower/bin/bower install && ./node_modules/gulp/bin/gulp.js init",
+    "start": "./node_modules/gulp/bin/gulp.js ghost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Giant Leaps",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.1",
+    "gulp": "3.9.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-sym": "0.0.14",
+    "require-dir": "0.3.1",
+    "run-sequence": "^1.2.2",
+    "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "ghost": "0.11.3"
+  }
+}

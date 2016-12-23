@@ -1,0 +1,21 @@
+{
+  "name": "giant-leaps",
+  "description": "Website for Giant Leaps (An HMFT Media & Information Division)",
+  "main": "index.js",
+  "authors": [
+    "Giant Leaps"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "flat-ui-sass": "^2.1.3"
+  }
+}

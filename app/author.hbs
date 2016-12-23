@@ -1,0 +1,21 @@
+{{!< default}}
+
+{{!-- Blog Entries Column --}}
+<div class="col-md-8">
+  <div class="page-header">
+    {{#author}}
+    <h4 class="has-sub">{{name}}'s Posts</h4>
+    {{/author}}
+  </div>
+  {{> "loop"}}
+
+</div>
+{{!-- ./Blog Entries Column --}}
+
+{{!-- Blog Sidebar Widgets Column --}}
+<div class="col-md-4">
+  {{> "sidebar"}}
+</div>
+{{!-- ./Blog Sidebar Widgets Column --}}
+
+</div>

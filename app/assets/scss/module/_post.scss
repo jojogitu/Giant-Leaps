@@ -1,0 +1,36 @@
+.post-header {
+  background-size: cover;
+  padding-top: 200px;
+  background-color: $clouds;
+}
+
+.post-header-content {
+  padding: 30px;
+  margin: 0 -30px;
+  background: rgba(255,255,255,0.9);
+
+  .meta {
+    margin-bottom: 0;
+  }
+}
+
+.post-content {
+  margin-top: 50px;
+  font-size: 18px;
+
+  > p {
+    font-size: 18px;
+  }
+
+  > p:first-child {
+    @extend .lead;
+  }
+}
+
+.post-footer {
+  margin-top: 30px;
+}
+
+.post-comment {
+  margin-top: 30px;
+}
