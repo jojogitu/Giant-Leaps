@@ -44,3 +44,38 @@ $(document).ready(function() {
         $(".navbar-sub").removeClass("is-hidden");
       }
 });
+
+/** ===========================================
+  Hide / show the magazine overlay
+============================================ */
+
+function openOverlay() {
+    document.getElementById("overl").style.height = "100%";
+}
+
+function closeOverlay() {
+    document.getElementById("overl").style.height = "0%";
+}
+
+/** ===========================================
+  Create the Flipbook
+============================================ */
+
+function loadApp() {
+	$('.flipbook').turn({
+			width:922,
+			height:600,
+			elevation: 50,
+			gradients: true,
+			autoCenter: true
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['assets/js/turn/turn.js'],
+	nope: ['assets/js/turn.html4.min.js'],
+	both: ['assets/css/basic.css'],
+	complete: loadApp
+});
