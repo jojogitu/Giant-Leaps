@@ -286,7 +286,7 @@ function loadApp() {
 yepnope({
 	test : Modernizr.csstransforms,
 	yep: ['assets/js/turn/turn.js'],
-	nope: ['assets/js/turn/turn.html4.min.js', 'assets/css/jquery.ui.html4.css'],
-	both: ['assets/js/turn/zoom.min.js', 'assets/css/jquery.ui.css', 'assets/js/magazine.js', 'assets/css/magazine.css'],
+	nope: ['assets/js/turn/turn.html4.min.js', 'assets/css/magazine/jquery.ui.html4.css'],
+	both: ['assets/js/turn/zoom.min.js', 'assets/css/magazine/jquery.ui.css', 'assets/js/magazine.js', 'assets/css/magazine/magazine.css'],
 	complete: loadApp
 });
