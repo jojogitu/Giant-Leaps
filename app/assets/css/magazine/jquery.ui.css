@@ -21,23 +21,23 @@
 	display:none;
 
 	-webkit-transform:translate3d(0px, 50px, 0px) scale(0.1, 0.1);
-	-webkit-transition:-webkit-transform 0.2s;
+	-webkit-transition:all 0.2s;
 	-webkit-border-radius:5px;
 
 	-moz-transform:translate3d(0px, 50px, 0px) scale(0.1, 0.1);
-	-moz-transition:-moz-transform 0.2s;
+	-moz-transition:all 0.2s;
 	-moz-border-radius:5px;
 
 	-o-transform:translate3d(0px, 50px, 0px) scale(0.1, 0.1);
-	-o-transition:-o-transform 0.2s;
+	-o-transition:all 0.2s;
 	-o-border-radius:5px;
 
 	-ms-transform:translate3d(0px, 50px, 0px) scale(0.1, 0.1);
-	-ms-transition:-ms-transform 0.2s;
+	-ms-transition:all 0.2s;
 	-ms-border-radius:5px;
 
 	transform:translate3d(0px, 50px, 0px) scale(0.1, 0.1);
-	transition:transform: 0.2s;
+	transition:all 0.2s;
 	border-radius:5px;
 }
 
@@ -52,7 +52,7 @@
 	width:100px;
 	margin:7px;
 	height:70px;
-	background-color:white;
+	background:white url(../new/thumb.png);
 }
 
 .turnjs-slider .ui-state-hover .thumbnail{
@@ -78,6 +78,7 @@
 .ui-state-disabled {
 	cursor: default !important;
 }
+
 
 /* Misc visuals
 ----------------------------------*/
@@ -116,7 +117,7 @@
 
 .turnjs-slider .ui-slider-horizontal .ui-slider-handle {
 	margin-left:-40px;
-	margin-top:3px;
+	margin-top:-1px;
 }
 
 /* Interaction states

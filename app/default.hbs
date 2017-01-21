@@ -46,11 +46,22 @@
     </div>
   </footer>
 
-  <script src="{{asset "js/lib/jquery.min.1.7.js"}}"></script>
-  <script src="{{asset "js/lib/jquery-ui-1.8.20.custom.min.js"}}"></script>
+  {{^is "page"}}
+  <script src="{{asset "js/lib/jquery.min.js"}}"></script>
   <script src="{{asset "js/lib/bootstrap.min.js"}}"></script>
-  <script src="{{asset "js/lib/modernizr.min.js"}}"></script>
+  {{/is}}
+
+  {{#is "page"}}
+  <link rel="stylesheet" type="text/css" href="{{asset "css/magazine/jquery.ui.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/magazine/def.css"}}" />
+  <script src="{{asset "js/lib/all.jquery.jquery-ui.modernizr.js"}}"></script>
+  <script src="{{asset "js/lib/jquery.mousewheel.min.js"}}"></script>
   <script src="{{asset "js/turn/hash.js"}}"></script>
+  <script src="{{asset "js/turn/turn.min.js"}}"></script>
+  <script src="{{asset "js/turn/zoom.min.js"}}"></script>
+  <script src="{{asset "js/magazine.js"}}"></script>
+  {{/is}}
+
   <script src="{{asset "js/index.js"}}"></script>
 
 </body>
