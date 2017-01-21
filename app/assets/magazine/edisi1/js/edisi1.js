@@ -86,7 +86,7 @@ function loadFlipbook(flipbook) {
 		gradients: true,
 		autoCenter: true,
 		duration: 1000,
-		pages: 11,
+		pages: 40,
 		when: {
 
 		turning: function(e, page, view) {
